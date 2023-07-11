@@ -1,0 +1,79 @@
+h1{
+
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    border: 5px rgb(255, 255, 255) dashed;
+    
+}
+
+*{
+
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+body{
+
+    background-color: bisque;
+
+    
+}
+
+#id1{
+    
+    text-align:center;
+    background-color: blueviolet;
+    padding: 5px 5px 5px 5px;   
+    border: 3px solid black;
+    margin:20px 10px 10px 630px;
+    width:100px;
+
+    
+}
+
+#id2{
+
+    text-align:center;
+    color: rgb(9, 255, 0);
+    
+}
+
+.class1{
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: crimson;
+    
+}
+a:link,a:visited{
+
+    background-color: white;
+
+}
+
+
+a:hover{
+
+    background-color: black;
+
+}
+
+a:active{
+
+    background-color: rgb(0, 68, 68);
+
+}
+
+#bg{
+
+    width:400px;
+    height:400px;
+    background:url("twitter.jpg") no-repeat center greenyellow ;
+    text-align: center;
+    margin-left: 482px;
+    padding-top: 15px;
+}
