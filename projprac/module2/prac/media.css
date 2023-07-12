@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    margin-bottom: 15px;
+}
+p{
+    border: 1px solid black;
+    background-color: darkkhaki;
+    width: 90%;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: whitesmoke;
+}
+.row{
+    width:100%;
+}
+
+@media (min-width:1200px){
+    .coll1,.coll2,.coll3,.coll4,.coll5,.coll6,.coll7,.coll8,.coll9,.coll10,.coll11,.coll12{
+        float:left;
+        border: 1px solid gold;
+    }
+    .coll1{
+        width:8.33%;
+    }
+    .coll2{
+        width:16.66%;
+    }
+    .coll3{
+        width:25%;
+    }
+    .coll4{
+        width:33%;
+    }
+    .coll5{
+        width:41.66%;
+    }
+    .coll6{
+        width:50%;
+    }
+    .coll7{
+        width:58.33%;
+    }
+    .coll8{
+        width:66.66%;
+    }
+    .coll9{
+        width:74.99%;
+    }
+    .coll10{
+        width:83.33%;
+    }
+    .coll11{
+        width:91.66%;
+    }
+    .coll12{
+        width:100%;
+    }
+
+}
+
+@media (min-width:950px) and (max-width:1199px){
+    .colm1,.colm2,.colm3,.colm4,.colm5,.colm6,.colm7,.colm8,.colm9,.colm10,.colm11,.colm12{
+        float:left;
+        border: 1px solid gold;
+    }
+    .colm1{
+        width:8.33%;
+    }
+    .colm2{
+        width:16.66%;
+    }
+    .colm3{
+        width:25%;
+    }
+    .colm4{
+        width:33%;
+    }
+    .colm5{
+        width:41.66%;
+    }
+    .colm6{
+        width:50%;
+    }
+    .colm7{
+        width:58.33%;
+    }
+    .colm8{
+        width:66.66%;
+    }
+    .colm9{
+        width:74.99%;
+    }
+    .colm10{
+        width:83.33%;
+    }
+    .colm11{
+        width:91.66%;
+    }
+    .colm12{
+        width:100%;
+    }
+
+}
