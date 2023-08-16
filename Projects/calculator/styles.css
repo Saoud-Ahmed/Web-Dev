@@ -1,0 +1,84 @@
+:root{
+    --body:#008080;
+    --numbers:#10374A;
+    --screen:white;
+    --gld:goldenrod;
+}
+*{
+    box-sizing: border-box;
+}
+#backgrnd{
+    background-image: linear-gradient(#626,#626869);
+    display: flex; 
+    justify-content:center;
+    height:100vh;
+    width: 100vw;
+}
+.calcover{
+    margin-top: 7vh;
+    width: 350px;
+    height: 520px;
+    background-color: var(--body);
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    width: 55px;
+    height: 55px;
+    background-color: var(--numbers);
+    display: inline-flex;
+    box-shadow: 0px 0px 15px white;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 0px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    color: white;
+}
+
+.gld{
+    background-color: var(--gld);
+}
+#screen{
+    width: 320px;
+    height: 55px;
+    background-color: var(--screen);
+    position: absolute;
+    top: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+    padding-right: 10px;
+}
+#btnum{
+    width: 320px;
+    background-color: var(--body);
+    height: 370px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    border: 3px solid black;
+    padding-left: 8px;
+}
+#rel{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+#bgtxt{
+    position: absolute;
+    font-size: 275px;
+    top: 75px;
+    color: goldenrod;
+    text-shadow: 0px 0px 20px;
+}
