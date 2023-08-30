@@ -125,7 +125,7 @@ body{
 
 
 .test{
-    overflow: hidden;
+    width: 100vw;
 }
 
 
