@@ -124,7 +124,9 @@ body{
 
 
 
-
+.test{
+    overflow: -moz-hidden-unscrollable;
+}
 
 
 
