@@ -125,7 +125,7 @@ body{
 
 
 .test{
-    overflow: -moz-hidden-unscrollable;
+    overflow: hidden;
 }
 
 
