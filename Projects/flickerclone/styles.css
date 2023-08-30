@@ -1,0 +1,218 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+/* START OF NAVBAR */
+
+
+.navbar{
+    padding: 0px;
+}
+#navibar{
+    display: flex;
+    width: 100vw;   
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0px 20px;
+    height: 65px;
+}
+#lg1{
+    width: 30px;
+    position: relative;
+    top: -3px;
+}
+#lg2{
+    width: 75px;
+    position: relative;
+    left: -3px;
+    top: -3px;
+}
+#searchbox{
+    background-color: rgba(255, 255, 255, 0.705);
+    height: 32px;
+    width: 820px;
+    border-radius: 3px; 
+}   
+#search-container {
+    display: flex;
+    align-items: center; /* Vertically center the search box */
+    width: 100vw;
+    justify-content: center;
+    position: absolute;
+    left: -25px;
+    z-index: -1;
+}
+#searchbtn{
+    
+    height: 32px;
+    border-radius: 3px;
+    margin-left: 5px;
+    border: 0px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+#searchimg{
+    
+    color: rgb(85, 83, 83);
+    position: relative;
+    left: -5px;
+    top: -2px;
+}
+#searchtext{
+    
+    height: 32px;
+    position: absolute;
+    width: 48.95rem;
+    border-radius: 3px;
+    border: 0px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    outline: none;
+    margin-left: 2px;
+    color: black;
+    font-weight: 500;
+}
+#searchtext::placeholder{
+    font-weight: lighter;
+    font-size: 13px;
+    color: grey;
+}
+#login{
+    width: 50px;
+    height: 32px;
+    text-transform: capitalize;
+    padding: 0px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border: 0px;
+    position: relative;
+    bottom: -2px;
+    font-size: 15px;
+}
+#signup{
+    width: 100px;
+    height: 32px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 0px;
+    border-radius: 5px;
+    border: 0px;
+    position: relative;
+    bottom: -2px;
+    background-color: white;
+    margin-left: 15px;
+    font-size: 15px;
+}
+#signup:hover{
+    color: grey;
+}
+#signup:focus{
+    border: 2px grey solid;
+}
+
+/*  END OF NAVBAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* START OF FOOTER */
+
+footer .container-fluid{
+    width: 100vw;
+    background-color: black;
+    overflow-x: hidden;
+}
+.col-lg-2{
+    text-align: center;
+    padding: 15px;
+    color: rgb(151, 149, 149);
+}
+.col-lg-2 a:hover{
+    color: white;
+}
+
+.col-lg-2 a{
+    text-decoration: none;
+    color: rgb(151, 149, 149);
+}
+footer section{
+    display: flex;
+    justify-content: center;
+}
+footer hr{
+    opacity: 0.2;
+    width: 70vw;
+}
+
+
+
+
+/* END OF FOOTER */
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media (max-width: 1199px){
+    #lg1{
+        margin-left: 30px;
+    }
+    #signup{
+        margin-right: 30px;
+        top: -7px;
+    }
+    #login{
+        top: -7px;
+        margin-left: 10px;
+    }
+    #searchbtn{
+        border: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+        bottom: -7px;
+    }
+    
+    
+}
+
+@media (max-width:991px){
+    .col-lg-2{
+        padding: 3px 5px 3px 5px;
+    }
+    .col-lg-2:nth-child(1){
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    #signup{
+        display: none;
+    }
+    #login{
+        border: solid 2px white;
+        width: 70px;
+        height: 35px;
+        border-radius: 0px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+}
