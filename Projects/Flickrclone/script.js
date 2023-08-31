@@ -93,22 +93,27 @@ function updateContent(currentIndex) {
     imgElement.classList.remove('slide-from-top');
 
     // Increment the index or reset to 0 if at the end of the array
-    currentIndex = (currentIndex + 1) % arraypics.length;
+    currentIndex = currentIndex + 1;
 }
+
 
 updateContent(currentIndex);
 
 
-const interval = setInterval(function(){updateContent(currentIndex);}, 5000); // 10 seconds in milliseconds
+const interval = setInterval(function(){if(currentIndex<8){
+    updateContent(currentIndex++);
+}
+else{
+    currentIndex=0;
+}}, 5000); // 10 seconds in milliseconds
 
 let logo=document.querySelector(".navbar-brand");
 
 
 logo.addEventListener("click", function() {
-    clearInterval(interval); // Clear the existing interval
-    let extra = Math.floor(Math.random() * 10);
-    if(extra == currentIndex) {
-        extra = Math.floor(Math.random() * 10);
+    let extra = Math.floor(Math.random() * 9);
+    if(extra==currentIndex){
+        extra = Math.floor(Math.random() * 9);
         currentIndex = extra;
         updateContent(currentIndex);
     }
