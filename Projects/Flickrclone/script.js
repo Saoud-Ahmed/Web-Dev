@@ -93,18 +93,19 @@ function updateContent(currentIndex) {
     imgElement.classList.remove('slide-from-top');
 
     // Increment the index or reset to 0 if at the end of the array
-    currentIndex = currentIndex + 1;
+    currentIndex = (currentIndex + 1);
 }
 
 
 updateContent(currentIndex);
 
 
-const interval = setInterval(function(){if(currentIndex<8){
+const interval = setInterval(function(){if(currentIndex==8){
+    currentIndex=0;
     updateContent(currentIndex++);
 }
 else{
-    currentIndex=0;
+    updateContent(++currentIndex);
 }}, 5000); // 10 seconds in milliseconds
 
 let logo=document.querySelector(".navbar-brand");
