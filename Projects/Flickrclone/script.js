@@ -3,14 +3,14 @@ function updateInputWidth() {
     var text=document.getElementById('searchtext');
     var screenWidth = window.innerWidth;
     
-    // Calculate the desired width (e.g., as a percentage of the screen width)
-    var desiredWidth = screenWidth * 0.6; // Adjust as needed
+
+    var desiredWidth = screenWidth * 0.6; 
     text.style.width= desiredWidth  +"px";
-    // Apply the desired width to the input
+
     input.style.width = desiredWidth + 'px';
 }
 
-// Attach the function to the window's resize event
+
 window.addEventListener('resize', updateInputWidth);
 
 
@@ -89,10 +89,10 @@ function updateContent(currentIndex) {
 
     imgElement.offsetWidth;
 
-    // Remove the slide-from-top class to trigger the transition
+
     imgElement.classList.remove('slide-from-top');
 
-    // Increment the index or reset to 0 if at the end of the array
+    // Increment the index
     currentIndex = (currentIndex + 1);
 }
 
@@ -106,7 +106,7 @@ const interval = setInterval(function(){if(currentIndex==8){
 }
 else{
     updateContent(++currentIndex);
-}}, 5000); // 10 seconds in milliseconds
+}}, 5000); // 5 seconds in milliseconds
 
 let logo=document.querySelector(".navbar-brand");
 
